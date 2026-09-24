@@ -1,0 +1,184 @@
+{
+  "version": "4.2.3",
+  "source": "https://cdn.emulatorjs.org/4.2.3/data/",
+  "files": {
+    "version.json": {
+      "bytes": 126,
+      "sha256": "d8991427000a96fb97daefdb62178071e9bbff911760706148e584ae8d69f9e7"
+    },
+    "emulator.min.css": {
+      "bytes": 25630,
+      "sha256": "16406c60b2dc3b04ae9b115e308613e6f567a0cc7068e21d9d0c1e5030fb395e"
+    },
+    "loader.js": {
+      "bytes": 7594,
+      "sha256": "69e0903bf1e2f62ced78895e7e511fa26e11316f7eb734925c35e919ba1287b2"
+    },
+    "emulator.min.js": {
+      "bytes": 426343,
+      "sha256": "6aec3fd7bb2721255801b0a6af02e47e78b05e28a1822b1f213aacbd348abaee",
+      "installedSha256": "2461a340ba3c3d60a2bc02074c52831268e6d25fc33375a7b2f9b23460e80865",
+      "patch": "Version check uses bundled local version.json; no external update request."
+    },
+    "compression/libunrar.js": {
+      "bytes": 66684,
+      "sha256": "bc35b98ec95020ec047f4762de3e66629741eee3826022195498d2a1e0fc102c"
+    },
+    "compression/extractzip.js": {
+      "bytes": 196199,
+      "sha256": "3cc825428724213acd43d30552a78008e0869b2326de17dee240dbff9ee2f629"
+    },
+    "compression/extract7z.js": {
+      "bytes": 280155,
+      "sha256": "4ac9933b995a516cb6b3ca4027db860278372a20c21c405d93ceb1998498853a"
+    },
+    "compression/libunrar.wasm": {
+      "bytes": 173799,
+      "sha256": "e4ea9bd0b13a9767916b424469e30205f47f267ecd9125ed56fb9ff0b9bc1b58"
+    },
+    "cores/reports/fceumm.json": {
+      "bytes": 120,
+      "sha256": "13dbbfba0ea1bea087c97c38f47dd49c3fb8f16c3f5ed5678dd75d352b737132"
+    },
+    "cores/reports/snes9x.json": {
+      "bytes": 120,
+      "sha256": "dc7ac963eb7935a7ac78956235ac0b8912ec785c57026336825aa2ed8031b3ad"
+    },
+    "cores/fceumm-wasm.data": {
+      "bytes": 1054015,
+      "sha256": "8c449fd5c36646fb0769423ed6ffa9efbdfc21fbfdc9bac7952b559d34d5b493"
+    },
+    "cores/fceumm-legacy-wasm.data": {
+      "bytes": 1053006,
+      "sha256": "f1054b094e7149fd6278485bc1b2e51ff75c5259048ddb1134171e53d651f239"
+    },
+    "cores/reports/gambatte.json": {
+      "bytes": 122,
+      "sha256": "a240a47bd6b2a38a6c46ee63c80bdcd24befbd50474453df4898d49282bd5f57"
+    },
+    "cores/snes9x-wasm.data": {
+      "bytes": 1093765,
+      "sha256": "eaa0bcfce67673809886e50387a80a616b719502175db64c090d04c9d75958ee"
+    },
+    "cores/snes9x-legacy-wasm.data": {
+      "bytes": 1092437,
+      "sha256": "7d427a575cefad98ff400493fa1d7e892da63fe7bab68979babd9cea0bfaaf3b"
+    },
+    "cores/gambatte-wasm.data": {
+      "bytes": 967156,
+      "sha256": "ad67c7bf57f8f8b62606048e6ea498afac5b5abc76ad8de5f9dfc2a6719374bb"
+    },
+    "cores/reports/mgba.json": {
+      "bytes": 118,
+      "sha256": "08219f6c855a9d996f04ed21169bb0c5ac64d469a8a536468b9876205b5c268d"
+    },
+    "cores/mgba-legacy-wasm.data": {
+      "bytes": 1054993,
+      "sha256": "e300d2f368c82bf61d77c972c36e367cf16408ec3d50beede080337519a3d696"
+    },
+    "cores/mgba-wasm.data": {
+      "bytes": 1055616,
+      "sha256": "01fcaf6d4296ef1db6676e0c69400c4474e24572d0b2b99cc097e4ae885e02d7"
+    },
+    "cores/gambatte-legacy-wasm.data": {
+      "bytes": 967022,
+      "sha256": "940a7381d51223c0be0c0f98d1a988d42cc98d03c27b392cbd29cb9f357b5f62"
+    },
+    "cores/reports/mupen64plus_next.json": {
+      "bytes": 153,
+      "sha256": "270105553cec57fd1058c50e0541b8b89dbd30b2323fd70682036f6919b805cc"
+    },
+    "cores/reports/melonds.json": {
+      "bytes": 167,
+      "sha256": "568f4ca9e4fb6ca8220d48047ae5ee3a7a1452c820b6718ef8b3888efed05a6a"
+    },
+    "cores/melonds-legacy-wasm.data": {
+      "bytes": 1193773,
+      "sha256": "9707c56d903daa699dbc725b065e63bc09834a94b143ee0f3b3c1520c6e3b54f"
+    },
+    "cores/melonds-wasm.data": {
+      "bytes": 1194723,
+      "sha256": "f3ad9e42bb3ccd5c9bece23445b56e2d10d2cae8cc33a2c0591529d0a83cdfeb"
+    },
+    "cores/reports/genesis_plus_gx.json": {
+      "bytes": 129,
+      "sha256": "5936a8ce8d7f010d5bfdd8c3bba2b2414f103b3a703121e56f2724b24dbe7ff3"
+    },
+    "cores/mupen64plus_next-legacy-wasm.data": {
+      "bytes": 1451870,
+      "sha256": "425072f4bf94eec02633cbe9b84f47d6803dc0ec1b3c3b8de3ebbd2eb5617c3f"
+    },
+    "cores/genesis_plus_gx-wasm.data": {
+      "bytes": 1203661,
+      "sha256": "190297a6f86757405090f1a2266f67dfe1a570a528c583434ed3641a5664f768"
+    },
+    "cores/mupen64plus_next-wasm.data": {
+      "bytes": 1451795,
+      "sha256": "2da1cbce9fda395e3ae83ca5787353baa159142d45ef3ea90f108b92524f76cc"
+    },
+    "cores/reports/smsplus.json": {
+      "bytes": 121,
+      "sha256": "1a3fc4e4ead90eb7f394b2498e63833ee5c35b7c8fa8e45445057b8bd9b81590"
+    },
+    "cores/genesis_plus_gx-legacy-wasm.data": {
+      "bytes": 1204803,
+      "sha256": "2a1edeb68d7ec882149ed3cd5d3aa95a6ac231ebabaf82cdb56175a8b62967cc"
+    },
+    "cores/smsplus-wasm.data": {
+      "bytes": 855876,
+      "sha256": "0f197c5e0000f17b2d072122a72b3f8fc1693514c4014fcd9694eec78584aa08"
+    },
+    "cores/smsplus-legacy-wasm.data": {
+      "bytes": 855316,
+      "sha256": "9fcc16b3e4ad662c395542bc96a0142cded1d17cbd8e43f0d5b3205cf4f7d340"
+    },
+    "cores/stella2014-legacy-wasm.data": {
+      "bytes": 1051741,
+      "sha256": "6dc81bb0c3c5833af69aa750491a6ecd547ec9b91c21bd55ed9a77d5b0a8dd08"
+    },
+    "cores/reports/stella2014.json": {
+      "bytes": 124,
+      "sha256": "c9920b95db48f678294daa72a289c19846e74ba69ca6d6094a76fb9f560fb39a"
+    },
+    "cores/reports/a5200.json": {
+      "bytes": 119,
+      "sha256": "956ea9075dd5c54c9bb1d0d819df0a7b867df05d7727a808e66fb5411374aab1"
+    },
+    "cores/stella2014-wasm.data": {
+      "bytes": 1051659,
+      "sha256": "6c96c6b1746f3f05ca599066abe131a36c77ca61fc20a9e2a7560540457c487d"
+    },
+    "cores/reports/prosystem.json": {
+      "bytes": 123,
+      "sha256": "e76f6a0fa395b175f6ddde0b574a3cb358dca0c359c6fd37e68b85a549ba21ee"
+    },
+    "cores/a5200-legacy-wasm.data": {
+      "bytes": 880582,
+      "sha256": "f1813f8e316c59cd62ff93512389abb5a3471843557880fd3b2abd5f10d993b7"
+    },
+    "cores/a5200-wasm.data": {
+      "bytes": 881560,
+      "sha256": "c82476478d6b70b9da80cccc27ca06a5fd85acf7cdd5643f230cc4d6777990ef"
+    },
+    "cores/prosystem-wasm.data": {
+      "bytes": 852864,
+      "sha256": "d3483e1c155c8d26e6b7b299c8ecc58c5abcfa0c5af5f03b75a55d219e71c3c8"
+    },
+    "cores/reports/pcsx_rearmed.json": {
+      "bytes": 149,
+      "sha256": "93b99266955ab16e9aa0faa0d6338f4a29b50c197764dd48be945573a5b449c1"
+    },
+    "cores/pcsx_rearmed-legacy-wasm.data": {
+      "bytes": 1038636,
+      "sha256": "88faee73d06c597a68a8b78e5621d97feefca134c64b623e65f0a900037456da"
+    },
+    "cores/prosystem-legacy-wasm.data": {
+      "bytes": 852780,
+      "sha256": "18cb399796b85461bd357bd17b08171b3728758eed170a9992dfc79ee071864e"
+    },
+    "cores/pcsx_rearmed-wasm.data": {
+      "bytes": 1039627,
+      "sha256": "fe5515f6c29f093f0e8c01824b213804f1f76eb9cb4c97c72fe2cc17606bfbc2"
+    }
+  }
+}

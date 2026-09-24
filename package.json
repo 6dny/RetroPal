@@ -1,0 +1,15 @@
+{
+  "name": "retropal",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A local-first multi-system game library and emulator frontend",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test --test-isolation=none tests/*.test.mjs",
+    "check": "node --experimental-vm-modules scripts/check.mjs",
+    "prepare:cores": "node scripts/fetch-cores.mjs",
+    "build:demo": "node scripts/build-demo.mjs"
+  },
+  "engines": { "node": ">=22" }
+}

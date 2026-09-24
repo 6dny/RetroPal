@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111314">
+  <meta name="description" content="Your collection. Every era. RetroPal is a local-first game library and emulator frontend.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' blob: data:; frame-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'">
+  <title>RetroPal — Your collection. Every era.</title>
+  <link rel="icon" href="favicon.svg?v=2" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <div id="splash" aria-hidden="true"><img class="brand-logo" src="favicon.svg" alt=""><strong>RetroPal</strong><div class="boot-line"></div><small>GOOD TIMES, RELOADED.</small></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#library"><img class="brand-logo" src="favicon.svg" alt="">RetroPal</a>
+    <div class="nav-label">YOUR PLAY SPACE</div>
+    <nav aria-label="Main navigation">
+      <a href="#library" data-page="library"><span data-icon="grid"></span>Game library<span class="nav-count" id="library-count">0</span></a>
+      <a href="#favorites" data-page="favorites"><span data-icon="heart"></span>Favorites</a>
+      <a href="#recent" data-page="recent"><span data-icon="clock"></span>Recently played</a>
+      <a href="#systems" data-page="systems"><span data-icon="cpu"></span>All systems<span class="nav-count">19</span></a>
+    </nav>
+    <div class="sidebar-bottom"><div class="local-card"><span data-icon="shield"></span><strong>Yours. Always.</strong><p>Your games stay on this device.</p></div><nav aria-label="App navigation"><a href="#guide" data-page="guide"><span data-icon="book"></span>Field guide</a><a href="#settings" data-page="settings"><span data-icon="settings"></span>Settings</a></nav><div class="version"><span class="status-dot"></span><span id="mode-label">Browser edition</span><span>v0.1</span></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span class="breadcrumb">Your play space <span>/</span> <strong id="crumb">Game library</strong></span><div class="top-actions"><span class="device-note" id="controller-label">Keyboard ready</span><span class="avatar" aria-label="Local player">P1</span></div></header>
+    <main id="main" tabindex="-1"></main>
+    <footer><span>MADE FOR THE GAMES YOU NEVER FORGOT.</span><span>Local library <span class="tiny-dot">·</span> No account needed</span></footer>
+  </div>
+  <dialog id="modal" aria-labelledby="modal-title"></dialog>
+  <dialog id="player" aria-labelledby="player-title"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input id="rom-input" type="file" multiple hidden>
+  <input id="bios-input" type="file" hidden>
+  <input id="cover-input" type="file" accept="image/png,image/jpeg,image/webp" hidden>
+</body>
+</html>

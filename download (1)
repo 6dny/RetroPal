@@ -1,0 +1,8 @@
+node_modules/
+.DS_Store
+*.log
+roms/
+bios/
+keys/
+test-results/
+playwright-report/
