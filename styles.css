@@ -21,9 +21,9 @@ body{font-family:var(--font,'Segoe UI',system-ui,sans-serif)}
 .footnote,.nav-label,.nav-count,.local-card p,.import-row small{color:var(--muted)}.icon-btn:hover,.icon-btn.selected{background:color-mix(in srgb,var(--accent) 12%,var(--panel));color:var(--accent)}
 .switch:checked{background:var(--accent);border-color:var(--accent)}.switch:checked:after{background:var(--ink)}
 #toast{background:var(--accent);color:var(--ink)}#splash{background:var(--bg)}#splash small{color:var(--muted)}.boot-line{background:var(--line)}
-[data-palette=daylight] .badge.native{color:#69438b;background:#ede4f8;border-color:#d7c4ea}[data-palette=daylight] .error,[data-palette=daylight] .btn.danger{color:#aa2922!important}
-[data-palette=daylight] .system-banner{background:color-mix(in srgb,var(--sys) 25%,white)}[data-palette=daylight] .system-banner b,[data-palette=daylight] .system-banner small,[data-palette=daylight] .system-mini b{color:color-mix(in srgb,var(--sys) 45%,#101820)}
-[data-palette=daylight] .cover{color:white}[data-palette=daylight] .cover-play{color:white}
+[data-palette$="-light"] .badge.native{color:#69438b;background:#ede4f8;border-color:#d7c4ea}[data-palette$="-light"] .error,[data-palette$="-light"] .btn.danger{color:#aa2922!important}
+[data-palette$="-light"] .system-banner{background:color-mix(in srgb,var(--sys) 25%,white)}[data-palette$="-light"] .system-banner b,[data-palette$="-light"] .system-banner small,[data-palette$="-light"] .system-mini b{color:color-mix(in srgb,var(--sys) 45%,#101820)}
+[data-palette$="-light"] .cover{color:white}[data-palette$="-light"] .cover-play{color:white}
 .appearance-panel{padding:30px}.appearance-heading{display:flex;align-items:center;justify-content:space-between;gap:20px}.appearance-heading h2{font-size:31px}.appearance-heading p{color:var(--muted);font-size:14px;margin:9px 0 5px}
 .appearance-fieldset{border:0;padding:0;margin:27px 0 0;min-width:0}.appearance-fieldset legend{font-size:14px;font-weight:600;margin-bottom:13px}.palette-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .palette-choice,.font-choice,.shape-choice{position:relative;display:block;padding:13px;border:1px solid var(--line);border-radius:11px;cursor:pointer;transition:background .2s,border-color .2s,transform .2s;min-width:0}.palette-choice:hover,.font-choice:hover,.shape-choice:hover{border-color:var(--accent)}
@@ -49,3 +49,6 @@ body{font-family:var(--font,'Segoe UI',system-ui,sans-serif)}
 .game-info h3{max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .game-info p{overflow-wrap:anywhere}
 .game-info>.icon-btn{flex:0 0 25px;min-width:25px}
+
+.palette-options{grid-template-columns:repeat(2,minmax(0,1fr))}
+#auto-save-status{display:block;margin-top:4px;font-size:11px;overflow-wrap:anywhere}.player-shell>.modal-head{flex-basis:auto;min-height:70px}.player-shell>.modal-head>div:first-child{min-width:0;flex:1}.player-shell>.modal-head .button-pair{flex-shrink:0}
