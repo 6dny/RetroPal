@@ -36,6 +36,8 @@ window.addEventListener('message',event=>{
     report('started',{resumeMessage});
   };
   window.EJS_onExit=()=>report('exit');
+  window.EJS_onSaveState=event=>report('manual-save',{state:event.state});
+  window.EJS_onLoadState=()=>report('open-saves');
   watchdog=setTimeout(()=>{if(!started)fail('The emulator is taking too long. Close the player, run Device check, or try a smaller game. A blocked resource, missing BIOS, incompatible dump, or limited memory can prevent startup.');},120000);
   const script=document.createElement('script');script.src='./vendor/emulatorjs/loader.js';script.onerror=()=>fail('The emulator files are missing or blocked. Run Device check from Settings.');document.head.append(script);
 });
@@ -49,7 +51,7 @@ report('frame-ready');
 document.addEventListener('click',event=>{
   const button=event.target.closest?.('button.ejs_menu_button');
   const label=button?.querySelector('.ejs_menu_text')?.textContent?.trim();
-  if(label!=='Enter Fullscreen'&&label!=='Exit Fullscreen')return;
+  if(label==='Save State'||label==='Load State'){event.preventDefault();event.stopImmediatePropagation();report(label==='Save State'?'manual-save-request':'open-saves');return;}if(label!=='Enter Fullscreen'&&label!=='Exit Fullscreen')return;
   event.preventDefault();event.stopImmediatePropagation();
   parent.document.dispatchEvent(new Event('retropal:toggle-fullscreen'));
 },true);
@@ -77,3 +79,8 @@ window.retroPalSnapshot=()=>{
   if(!stateReady||!started||!manager?.supportsStates())throw new Error('Automatic state unavailable for this session. Use in-game saves.');
   return manager.getState();
 };
+
+window.retroPalPause=()=>{const emulator=window.EJS_emulator;const wasPaused=!!emulator?.paused;emulator?.pause?.(true);return wasPaused;};
+window.retroPalResume=()=>window.EJS_emulator?.play?.(true);
+window.retroPalRestoreState=async blob=>{const manager=window.EJS_emulator?.gameManager;if(!started||!manager?.supportsStates())throw new Error('This core cannot restore states.');manager.loadState(new Uint8Array(await blob.arrayBuffer()));stateReady=true;};
+window.retroPalRestart=()=>{const manager=window.EJS_emulator?.gameManager;if(!manager)throw new Error('Wait for the game to load.');manager.restart();stateReady=manager.supportsStates();};
